@@ -1,0 +1,30 @@
+Priorities:(June 18 Thursday)
+
+1) Estimation - ( June 19 before noon) - Completed
+
+1 a) Estimation completed
+
+
+2) Identify the pages - Completed
+
+3) Identify the services needed to be included in the prject - Completed
+
+
+
+
+4) Database diagram 
+
+6) Decide between UML or design diagram
+
+5) Angular 8 project creation and identify concepts need to be included.
+
+Need to look into: 
+
+6) Git hub
+7) Angular 8
+8) ASP.NEt core
+9) EF Core
+10) Authentication method - https://code-maze.com/authentication-aspnetcore-jwt-1/
+11) Framework for dependency injection
+12) Mocker service
+

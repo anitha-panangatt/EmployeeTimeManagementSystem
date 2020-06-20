@@ -1,0 +1,66 @@
+June 18:
+
+Administrator
+Employee
+
+Unit testing - 3 days
+
+
+Authentication management???
+
+Angular side
+-------------
+1) Master page - Project Heading, Welcome user text, Logout button
+2) Login component
+3) Forgot password component
+4) Change password component
+
+Employee:
+
+1) EmployeeHomePage - personal information, project allocation, Timesheet links
+2) EmployeeTimeSheetEntryPage - Month view, Weekly view
+3) EmployeeEditProfilePage
+
+Administrator
+
+1) AdministratorHome page - Employee List Link, Project List Link, Report Link
+2) EmployeeListPage
+3) ProjectListPage
+4) CreateEmployeePage
+5) CreateProjectPage
+6) ReportPage
+7) TimeSheetEntryListPage
+
+
+Web API Side
+
+1) Authentication
+   a) Login
+   b) Reset password
+   c) Logout
+
+2) Employee
+   a) Create employee
+   b) update employee
+   c) delete employee - deactivate employee
+   d) Employee list
+   e) Employee search
+
+3) Project
+    a) create project
+    b) update project
+    c) delete project - deactivate project
+    d) project list
+
+4) Timesheet
+    a) create timesheet
+    b) update timesheet - by employee and by by admin  
+    c) delete timesheet entry
+    d) get timesheet entered by employee by day, week, month
+
+
+
+
+
+
+
