@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETMS.Services", "ETMS.Services\ETMS.Services.csproj", "{C7680137-8957-45C6-A8D2-FD74C1283881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Services", "ETMS.Services\ETMS.Services.csproj", "{C7680137-8957-45C6-A8D2-FD74C1283881}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Service.DomainEntity", "ETMS.Service.DomainEntity\ETMS.Service.DomainEntity.csproj", "{0D1172C9-8817-4C59-9593-6A18A02A043F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Service.DataAccessLayer", "ETMS.Service.DataAccessLayer\ETMS.Service.DataAccessLayer.csproj", "{6A1EF784-F885-49BB-B6F0-D93EA6238790}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Service.BuisinessLayer", "ETMS.Service.BuisinessLayer\ETMS.Service.BuisinessLayer.csproj", "{B48C09B2-90F9-4C67-A56F-4336B31472A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETMS.Services.Test", "ETMS.Services.Test\ETMS.Services.Test.csproj", "{A319A66A-126C-4A82-8161-B0CB74580B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{C7680137-8957-45C6-A8D2-FD74C1283881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7680137-8957-45C6-A8D2-FD74C1283881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7680137-8957-45C6-A8D2-FD74C1283881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1172C9-8817-4C59-9593-6A18A02A043F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1172C9-8817-4C59-9593-6A18A02A043F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1172C9-8817-4C59-9593-6A18A02A043F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1172C9-8817-4C59-9593-6A18A02A043F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1EF784-F885-49BB-B6F0-D93EA6238790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1EF784-F885-49BB-B6F0-D93EA6238790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1EF784-F885-49BB-B6F0-D93EA6238790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1EF784-F885-49BB-B6F0-D93EA6238790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

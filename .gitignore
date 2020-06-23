@@ -3,3 +3,14 @@
 ################################################################################
 
 /Source/Service/ETMS.Services/ETMS.Service.BuisinessLayer/bin/Debug/netstandard2.0
+/Source/Service/ETMS.Services/ClassLibrary1/obj
+/Source/Service/ETMS.Services/ETMS.Service.BuisinessLayer/obj
+/Source/Service/ETMS.Services/ETMS.Service.DataAccessLayer/bin/Debug/netstandard2.0
+/Source/Service/ETMS.Services/ETMS.Service.DataAccessLayer/obj
+/Source/Service/ETMS.Services/ETMS.Service.DomainEntity/bin/Debug/netstandard2.0
+/Source/Service/ETMS.Services/ETMS.Service.DomainEntity/obj
+/Source/Service/ETMS.Services/ETMS.Service.Test/bin/Debug
+/Source/Service/ETMS.Services/ETMS.Service.Test/obj/Debug
+/Source/Service/ETMS.Services/ETMS.Services/bin/Debug/netcoreapp3.1
+/Source/Service/ETMS.Services/ETMS.Services.Test/bin/Debug/netcoreapp3.1
+/Source/Service/ETMS.Services/ETMS.Services.Test/obj

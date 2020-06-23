@@ -1,0 +1,20 @@
+1) EF code first or data first adv and disadv?
+2) Different authentication methods
+3) Version of every concept using in project:
+   a) ASP.net core
+   b) Sql server
+   a) Angular
+   b) EF core version
+
+4) Database - source control - https://www.red-gate.com/hub/product-learning/sql-source-control/github-and-sql-source-control
+
+5) layered structure in project ?
+ https://stackoverflow.com/questions/26404775/when-to-use-a-visual-studio-project-for-a-layer-in-a-layered-architecture-what
+
+6)EF usage -https://www.thereformedprogrammer.net/six-ways-to-build-better-entity-framework-core-and-ef6-applications/
+
+scaffold-DbContext "Server=APANANGATT01;Database=ETMS;User Id=sa;Password=pass@word1" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models  -Context "EMTSDbContext" -DataAnnotations -Force -Project ETMS.Service.DataAccessLayer -StartupProject ETMS.Services
+
+7) identity insert on or off?
+
+8)
