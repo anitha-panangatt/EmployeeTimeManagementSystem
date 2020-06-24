@@ -17,4 +17,10 @@ scaffold-DbContext "Server=APANANGATT01;Database=ETMS;User Id=sa;Password=pass@w
 
 7) identity insert on or off?
 
-8)
+8)Time line:
+
+Employee create and update - 12
+
+9) unit test project - https://softchris.github.io/pages/dotnet-moq.html#full-code
+
+10) 

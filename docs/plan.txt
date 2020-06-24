@@ -14,3 +14,8 @@ Tuesday - Project, timesheet, projectallocation
 wednesday - Angular framework + master page
 
 Thursdaay - 			`
+
+
+1) default password creation
+2) create employee + user
+

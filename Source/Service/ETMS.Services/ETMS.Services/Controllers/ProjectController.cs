@@ -11,11 +11,7 @@ namespace ETMS.Services.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ProjectController : ControllerBase
-    {
-        public ProjectController()
-        {
-
-        }
+    {       
         private readonly IProjectService _projectService;
         public ProjectController(IProjectService projectService)
         {

@@ -14,3 +14,5 @@
 /Source/Service/ETMS.Services/ETMS.Services/bin/Debug/netcoreapp3.1
 /Source/Service/ETMS.Services/ETMS.Services.Test/bin/Debug/netcoreapp3.1
 /Source/Service/ETMS.Services/ETMS.Services.Test/obj
+/Source/Service/ETMS.Services/ETMS.NTest/bin/Debug/netcoreapp3.1
+/Source/Service/ETMS.Services/ETMS.NTest/obj

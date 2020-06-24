@@ -14,9 +14,6 @@ namespace ETMS.Services.Controllers
         {
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }

@@ -11,7 +11,28 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Service.DataAccessLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.Service.BuisinessLayer", "ETMS.Service.BuisinessLayer\ETMS.Service.BuisinessLayer.csproj", "{B48C09B2-90F9-4C67-A56F-4336B31472A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETMS.Services.Test", "ETMS.Services.Test\ETMS.Services.Test.csproj", "{A319A66A-126C-4A82-8161-B0CB74580B2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETMS.NTest", "ETMS.NTest\ETMS.NTest.csproj", "{CB9D02BF-7919-4954-913A-850805B03F6E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ETMSFrontEnd", "ETMSFrontEnd\", "{99A2FA67-5A02-4844-A32F-A27BA6B2EBB3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61835"
+		Debug.AspNetCompiler.PhysicalPath = "ETMSFrontEnd\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61835\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61835"
+		Release.AspNetCompiler.PhysicalPath = "ETMSFrontEnd\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61835\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61835"
+		SlnRelativePath = "ETMSFrontEnd\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +56,14 @@ Global
 		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48C09B2-90F9-4C67-A56F-4336B31472A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A319A66A-126C-4A82-8161-B0CB74580B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB9D02BF-7919-4954-913A-850805B03F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB9D02BF-7919-4954-913A-850805B03F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB9D02BF-7919-4954-913A-850805B03F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB9D02BF-7919-4954-913A-850805B03F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A2FA67-5A02-4844-A32F-A27BA6B2EBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A2FA67-5A02-4844-A32F-A27BA6B2EBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A2FA67-5A02-4844-A32F-A27BA6B2EBB3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A2FA67-5A02-4844-A32F-A27BA6B2EBB3}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
