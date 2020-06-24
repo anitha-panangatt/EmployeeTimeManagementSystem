@@ -31,6 +31,11 @@ namespace ETMS.Services
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IEmployeeService, EmployeeService>();
 
@@ -63,6 +68,7 @@ namespace ETMS.Services
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(options => options.AllowAnyOrigin());
 
             app.UseHttpsRedirection();
 
