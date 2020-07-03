@@ -160,7 +160,34 @@ namespace ETMS.Services.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("AllocateProjectToEmployee")]
+        public async Task<IActionResult> AllocateProjectToEmployee([FromBody] ProjectAllocation allocationInfo)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var allocationId = _projectService.AllocateProjectToEmployee(allocationInfo);
+                    if (allocationId > 0)
+                    {
+                        return Ok(allocationId);
+                    }
+                    else
+                    {
+                        return NotFound();
+                    }
+                }
+                catch (Exception)
+                {
 
+                    return BadRequest();
+                }
+
+            }
+
+            return BadRequest();
+        }
 
     }
 }

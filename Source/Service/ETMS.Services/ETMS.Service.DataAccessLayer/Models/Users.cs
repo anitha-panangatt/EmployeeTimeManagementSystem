@@ -14,6 +14,8 @@ namespace ETMS.Service.DataAccessLayer.Models
         public string UserName { get; set; }
         [StringLength(255)]
         public string PasswordText { get; set; }
+
+        public string Role { get; set; }
         public bool? IsActive { get; set; }
     }
 }

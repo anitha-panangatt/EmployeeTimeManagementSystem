@@ -40,5 +40,19 @@ namespace ETMS.Service.DataAccessLayer.Repository
             var response = _context.Project.Update(project);
             return _context.SaveChanges();
         }
+
+        public int CreateProjectAllocation(ProjectAllocation allocationInfo)
+        {
+            try
+            {
+                _context.ProjectAllocation.Add(allocationInfo);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return allocationInfo.AllocationId;
+        }
     }
 }

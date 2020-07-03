@@ -17,7 +17,10 @@ namespace ETMS.Service.BuisinessLayer
             _projectRepository = projectRepository;
         }
         public int CreateProject(Project project)
-        {            
+        {
+            project.IsActive = true;
+            project.CreatedDateTime = DateTime.Now;
+
             return _projectRepository.CreateProject(project);
         }
 
@@ -58,6 +61,11 @@ namespace ETMS.Service.BuisinessLayer
             return _projectRepository.GetAllProjects();
         }
 
-        
+        public int AllocateProjectToEmployee(ProjectAllocation allocationInfo)
+        {
+            allocationInfo.IsAllocationActive = true;
+            allocationInfo.CreatedDateTime = DateTime.Now;
+            return _projectRepository.CreateProjectAllocation(allocationInfo);
+        }
     }
 }

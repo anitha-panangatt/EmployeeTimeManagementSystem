@@ -18,7 +18,8 @@ namespace ETMS.Service.DataAccessLayer.Repository
         public int CreateTimeEntry(TimeEntry timeEntry)
         {
             _context.Add(timeEntry);
-            return _context.SaveChanges();
+             _context.SaveChanges();
+            return timeEntry.TimeEntryId;
         }
 
         public IEnumerable<TimeEntry> GetAllTimeEntry()

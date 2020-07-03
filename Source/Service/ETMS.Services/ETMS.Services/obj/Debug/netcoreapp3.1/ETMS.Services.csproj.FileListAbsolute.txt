@@ -147,8 +147,6 @@ D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\bin\D
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.csprojAssemblyReference.cache
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.AssemblyInfoInputs.cache
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.AssemblyInfo.cs
-D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.csproj.CoreCompileInputs.cache
-D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.MvcApplicationPartsAssemblyInfo.cache
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.RazorTargetAssemblyInfo.cache
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.csproj.CopyComplete
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\staticwebassets\ETMS.Services.StaticWebAssets.Manifest.cache
@@ -156,3 +154,8 @@ D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\D
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.dll
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.pdb
 D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.genruntimeconfig.cache
+D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.csproj.CoreCompileInputs.cache
+D:\EmployeeTimeManagementSystem\Source\Service\ETMS.Services\ETMS.Services\obj\Debug\netcoreapp3.1\ETMS.Services.MvcApplicationPartsAssemblyInfo.cache

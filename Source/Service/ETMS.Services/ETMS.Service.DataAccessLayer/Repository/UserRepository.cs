@@ -15,7 +15,14 @@ namespace ETMS.Service.DataAccessLayer.Repository
 
         public IEnumerable<Users> GetAllEmployee()
         {
-            return _context.Users.OrderBy(e => e.UserName).ToList();
+            try
+            {
+                return _context.Users.OrderBy(e => e.UserName).ToList();
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
 
         }
 
@@ -24,17 +31,40 @@ namespace ETMS.Service.DataAccessLayer.Repository
             return _context.Users.FirstOrDefault(e => e.UserId == employeeId);
         }
 
-      
+
 
         public int CreateUser(Users user)
         {
-           _context.Add(user);
-           return _context.SaveChanges();
+            try
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return user.UserId;
+        }
+
+        public int CreateEmployee(EmployeeInfo empInfo)
+        {
+            try
+            {
+                _context.EmployeeInfo.Add(empInfo);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return empInfo.UserId;
         }
 
         public Users GetEmployee(string employeeName)
         {
-           return _context.Users.FirstOrDefault(x => x.UserName == employeeName);
+            return _context.Users.FirstOrDefault(x => x.UserName == employeeName);
         }
 
         public int UpdateEmployee(Users user)
@@ -42,5 +72,10 @@ namespace ETMS.Service.DataAccessLayer.Repository
             var userResponse = _context.Users.Update(user);
             return _context.SaveChanges();
         }
+
+        public Users GetUser(string userName, string password)
+        {
+            return _context.Users.FirstOrDefault(x => x.UserName == userName && x.PasswordText == password);
+        } 
     }
 }

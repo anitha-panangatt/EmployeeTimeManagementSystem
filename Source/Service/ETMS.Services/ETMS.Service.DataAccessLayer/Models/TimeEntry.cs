@@ -18,5 +18,8 @@ namespace ETMS.Service.DataAccessLayer.Models
         public double Hours { get; set; }
         [Column(TypeName = "datetime")]
         public DateTime? CreatedDateTime { get; set; }
+       // public DateTime? ModifiedDateTime { get; set; }
+
+        public string TaskComment { get; set; }
     }
 }

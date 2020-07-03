@@ -23,4 +23,11 @@ Employee create and update - 12
 
 9) unit test project - https://softchris.github.io/pages/dotnet-moq.html#full-code
 
-10) 
+10) Authentication - https://jasonwatmore.com/post/2019/06/22/angular-8-jwt-authentication-example-tutorial
+
+11) Routing - https://www.tektutorialshub.com/angular/angular-routing-navigation/
+
+ag-grid:
+https://www.youtube.com/watch?v=NXL1-1HR0_k
+
+https://stackoverflow.com/questions/50990806/angular-6-ag-grid-cell-renderer-click-function/57057771

@@ -19,5 +19,6 @@ namespace ETMS.Service.BuisinessLayer.Interfaces
         int UpdateProjectInfo(Project project);
 
         int DeleteProject(int projectID);
+        int AllocateProjectToEmployee(ProjectAllocation allocationInfo);
     }
 }

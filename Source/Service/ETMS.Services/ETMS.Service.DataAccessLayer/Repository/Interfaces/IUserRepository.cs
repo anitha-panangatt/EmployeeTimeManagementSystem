@@ -16,5 +16,7 @@ namespace ETMS.Service.DataAccessLayer.Repository
 
         int UpdateEmployee(Users user);
 
+        int CreateEmployee(EmployeeInfo empInfo);
+        Users GetUser(string userName, string password);
     }
 }

@@ -34,6 +34,9 @@
             "projectReferences": {
               "D:\\EmployeeTimeManagementSystem\\Source\\Service\\ETMS.Services\\ETMS.Service.DataAccessLayer\\ETMS.Service.DataAccessLayer.csproj": {
                 "projectPath": "D:\\EmployeeTimeManagementSystem\\Source\\Service\\ETMS.Services\\ETMS.Service.DataAccessLayer\\ETMS.Service.DataAccessLayer.csproj"
+              },
+              "D:\\EmployeeTimeManagementSystem\\Source\\Service\\ETMS.Services\\ETMS.Service.DomainEntity\\ETMS.Service.DomainEntity.csproj": {
+                "projectPath": "D:\\EmployeeTimeManagementSystem\\Source\\Service\\ETMS.Services\\ETMS.Service.DomainEntity\\ETMS.Service.DomainEntity.csproj"
               }
             }
           }
@@ -257,6 +260,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

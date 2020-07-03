@@ -1,0 +1,35 @@
+<p>project-allocation works!</p>
+<div class="container">
+    <h1>Project Allocation</h1>
+        
+    <form [formGroup]="form" (ngSubmit)="submit()">
+           
+        <div class="form-group">
+            <div>
+            <label for="projectId">Project:</label>
+            <select formControlName="projectId" class="form-control">
+                <option disabled>Select Project</option>
+                <option>Choose Project</option>
+                <option *ngFor="let project of projectList" [value]="project.projectId">{{project.projectName}}</option>
+            </select>
+            <div *ngIf="f.projectId.touched && f.projectId.invalid" class="alert alert-danger">
+                <div *ngIf="f.projectId.errors.required">project is required.</div>
+            </div>
+        </div>
+        <div>
+            <label for="employeeId">Employee:</label>
+            <select formControlName="employeeId" class="form-control">
+                <option disabled>Select Project</option>
+                
+                <option *ngFor="let emp of empList" [value]="emp.userId">{{emp.userName}}</option>
+            </select>
+            <div *ngIf="f.employeeId.touched && f.employeeId.invalid" class="alert alert-danger">
+                <div *ngIf="f.employeeId.errors.required">Name is required.</div>
+            </div>
+        </div>
+        </div>
+        
+       
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>

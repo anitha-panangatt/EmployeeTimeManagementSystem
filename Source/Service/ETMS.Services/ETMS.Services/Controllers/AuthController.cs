@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using ETMS.Service.BuisinessLayer;
 using ETMS.Service.DomainEntity.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -15,6 +16,11 @@ namespace ETMS.Services.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly IEmployeeService _employeeService;
+        public AuthController(IEmployeeService employeeService)
+        {
+            _employeeService = employeeService;
+        }
         // GET api/values
         [HttpPost, Route("login")]
         public IActionResult Login([FromBody] LoginModel user)
@@ -24,7 +30,9 @@ namespace ETMS.Services.Controllers
                 return BadRequest("Invalid client request");
             }
 
-            if (user.UserName == "johndoe" && user.Password == "def@123")
+            var result =_employeeService.ValidateEmployee(user.UserName, user.Password);
+
+            if (result!=null)
             {
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
@@ -38,7 +46,7 @@ namespace ETMS.Services.Controllers
                 );
 
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString });
+                return Ok(new { Token = tokenString, Role= result.Role,UserName = result.UserName });
             }
             else
             {

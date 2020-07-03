@@ -15,5 +15,6 @@ namespace ETMS.Service.DataAccessLayer.Repository.Interfaces
         int CreateProject(Project project);
 
         int UpdateProject(Project project);
+        int CreateProjectAllocation(ProjectAllocation allocationInfo);
     }
 }

@@ -34,22 +34,26 @@ namespace ETMS.Service.DataAccessLayer.Models
         {
             modelBuilder.Entity<EmployeeInfo>(entity =>
             {
-                entity.HasNoKey();
+                entity.HasKey(e => e.UserId)
+                   .HasName("PK__EmployeeInfo");
             });
 
             modelBuilder.Entity<Project>(entity =>
             {
-                entity.Property(e => e.ProjectId).ValueGeneratedNever();
+                entity.HasKey(e => e.ProjectId)
+                   .HasName("PK__Project");
             });
 
             modelBuilder.Entity<ProjectAllocation>(entity =>
             {
-                entity.Property(e => e.AllocationId).ValueGeneratedNever();
+                entity.HasKey(e => e.AllocationId)
+                   .HasName("PK__ProjectAllocation");
             });
 
             modelBuilder.Entity<TimeEntry>(entity =>
             {
-                entity.Property(e => e.TimeEntryId).ValueGeneratedNever();
+                entity.HasKey(e => e.TimeEntryId)
+                   .HasName("PK__TimeEntry");
             });
 
             modelBuilder.Entity<Users>(entity =>

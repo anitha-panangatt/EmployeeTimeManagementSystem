@@ -1,9 +1,11 @@
 ﻿using ETMS.Service.DataAccessLayer.Models;
 using ETMS.Service.DataAccessLayer.Repository;
+using ETMS.Service.DomainEntity.Employee;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using static ETMS.Service.BuisinessLayer.Common.Constants;
 
 namespace ETMS.Service.BuisinessLayer
 {
@@ -14,10 +16,34 @@ namespace ETMS.Service.BuisinessLayer
         {
             _userRepository = userRepository;
         }
-        public int CreateEmployee(Users employee)
+        public int CreateEmployee(Employee employee)
         {
-            employee.PasswordText = CreateDefaultPassword(employee.UserName);
-            return _userRepository.CreateUser(employee);
+            employee.Employeename = employee.FirstName + " " + employee.LastName;
+
+            Users user = new Users();
+            user.PasswordText = CreateDefaultPassword(employee.Employeename);
+            user.UserName = employee.Employeename;
+            user.Role = UserRole.Employee.ToString();
+            user.IsActive = true;
+
+            var userId = _userRepository.CreateUser(user);
+
+            if (userId > 0)
+            {
+                EmployeeInfo empInfo = new EmployeeInfo();
+                empInfo.UserId = userId;
+                empInfo.EmployeeName = employee.Employeename;
+                empInfo.MobileNumber = employee.MobileNumber;
+                empInfo.Email = employee.Email;
+                empInfo.CreatedDateTime = DateTime.Now;
+                empInfo.FirstName = employee.FirstName;
+                empInfo.LastName = employee.LastName;
+                empInfo.State = employee.State;
+                empInfo.City = employee.City;
+                return _userRepository.CreateEmployee(empInfo);
+            }
+
+            return userId;
         }
 
         public int DeleteEmployee(int employeeID)
@@ -52,9 +78,25 @@ namespace ETMS.Service.BuisinessLayer
             return _userRepository.UpdateEmployee(employee);
         }
 
+        public Users ValidateEmployee(string userName, string password)
+        {
+            return _userRepository.GetUser(userName, password);
+        }
+
         private string CreateDefaultPassword(string empName)
         {
             return empName.Substring(0, Math.Min(empName.Length, 4));
+        }
+
+        public int ResetPassword(string userName, string pwd)
+        {
+            var user = _userRepository.GetEmployee(userName);
+            if(user!=null && user.IsActive.Value)
+            {
+                user.PasswordText = pwd;
+               return _userRepository.UpdateEmployee(user);
+            }
+            return 0;
         }
     }
 }

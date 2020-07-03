@@ -1,0 +1,58 @@
+
+
+
+<form [formGroup]="empForm" (ngSubmit)="addEmployee()">
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputFirstName">First name</label>
+        <input type="text" class="form-control" id="inputFirstName" formControlName="FirstName" placeholder="First name">
+        <div class="form-validation"
+        *ngIf="empForm.controls['FirstName'].errors?.required && (empForm.controls['FirstName'].dirty || empForm.controls['FirstName'].touched)">
+        First Name is required
+    </div> 
+    </div>
+      <div class="form-group col-md-4">
+        <label for="inputLastName">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" formControlName="LastName" placeholder="Last name">
+     </div>      
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputMobile">Mobile</label>
+          <input type="text" class="form-control" id="inputMobile" formControlName="MobileNumber" placeholder="Mobile number">
+          <div *ngIf="empForm.controls['MobileNumber'].touched && empForm.controls['MobileNumber'].invalid" class="alert alert-danger">
+            <div *ngIf="empForm.controls['MobileNumber'].errors.required">Mobile Number is required.</div>
+            <div *ngIf="empForm.controls['MobileNumber'].errors.pattern">Please, Enter 10 digit Mobile Number.</div>
+        </div>
+
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputEmail">Email</label>
+          <input type="text" class="form-control" id="inputEmail" formControlName="Email" placeholder="Email">
+          <div class="form-validation"
+          *ngIf="empForm.controls['Email'].errors?.required && (empForm.controls['Email'].dirty || empForm.controls['Email'].touched)">
+          Email is required
+      </div>
+        </div>
+      </div>
+      <div class="form-row">
+    <div class="form-group col-md-8">
+      <label for="inputAddress">Address</label>
+      <textarea class="form-control" id="inputAddress" formControlName="Address"></textarea>
+    </div>    
+</div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" id="inputCity" formControlName="City">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <input type="text" class="form-control" id="inputState" formControlName="State">
+      </div>
+      
+    </div>
+  
+    <button type="submit" class="btn btn-primary" >Create</button>
+  </form>
+

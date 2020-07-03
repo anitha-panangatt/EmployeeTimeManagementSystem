@@ -33,7 +33,7 @@ namespace ETMS.Services
         {
             services.AddCors(c =>
             {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             });
 
             services.AddScoped<IUserRepository, UserRepository>();
@@ -55,9 +55,11 @@ namespace ETMS.Services
             });
 
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
 
-           
+            
+
+
 
         }
 
@@ -68,7 +70,7 @@ namespace ETMS.Services
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(options => options.AllowAnyOrigin());
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
